@@ -1,0 +1,230 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html { 
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+
+
+
+/********************************CSS DEL HEADER************************************/
+.header {
+    position: sticky;
+    top: 0px;
+    background: rgb(2,1,4);
+    background: linear-gradient(180deg, rgba(2,1,4,1) 63%, rgba(255,255,255,0.9808298319327731) 100%);
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: 
+        "titulo logo"
+        "nav nav"
+    ;
+}
+
+.tituloPrincipal {
+    color: crimson;
+    text-align: center;
+    grid: titulo;
+}
+
+.logoHeader {
+    border-bottom: 100%;
+    grid: logo;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navItems {
+    display: inline-block;
+    border: solid 1px crimson;
+    border-radius: 10%;
+    list-style-type: none;
+    text-decoration: none;
+    color: beige;
+    list-style-type: none;
+    
+}
+
+.nav {
+    grid-area: nav;
+}
+
+/***********************************CSS DEL MAIN***********************************/
+
+.contenedorSection {
+    display: inline-block;
+    border: solid 1px black;
+    text-decoration: none;
+}
+
+.sub {
+    margin-left: 30%;
+}
+
+.img-productos {
+    width: 100%;
+}
+
+.videoEmpresarial {
+    width: 100%;
+}
+
+.formulario {
+    border: solid 2px crimson;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 2%;
+}
+
+.formularioNombre {
+    display: block;
+}
+
+.formularioEmail {
+    display: block;
+}
+
+.formularioTelefono {
+    display: block;
+}
+
+.formularioTexto {
+    display: block;
+}
+
+.formularioSubmit {
+    display: block;
+}
+
+/************************************CSS DEL FOOTER*******************************/
+
+footer {
+    background: rgb(2,1,4);
+    background: linear-gradient(0deg, rgba(2,1,4,1) 63%, rgba(255,255,255,0.9808298319327731) 100%);
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 20%);
+}
+
+.datos-empresa {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+.contenedor-info {
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+
+.contenedor-productos {
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
+
+.newsletter {
+    grid-column: 2/5;
+    grid-row: 5/6;
+    color: aliceblue;
+}
+
+.contenedor-redes{
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 2/4;
+    grid-row: 6/7;
+}
+
+.lista {
+    list-style-type: none;
+    text-decoration: none;
+    color: beige;
+    list-style-type: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.redesSociales {
+    list-style-type: none;
+    text-decoration: none;
+    color: beige;
+    list-style-type: none;
+    display: inline-block;   
+}
+
+.redesSociales i {
+    font-size: 3rem;
+    color: black;
+}
+
+/******************************* MEDIA 480 a 768*************************/
+
+@media (min-width: 480px) {
+    .datos-empresa {
+        grid-column: 1/2;
+        grid-row: 3/5;
+        color: aliceblue;
+    }
+    
+    .contenedor-info {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    
+    .contenedor-productos {
+        grid-column: 4/5;
+        grid-row: 1/4;
+    }
+    
+    .newsletter {
+        grid-column: 3/5;
+        grid-row: 4/5;
+        color: aliceblue;
+    }
+
+    .contenedor-redes{
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }
+
+    .redesSociales i {
+        font-size: 2rem;
+        color: aliceblue;
+    }
+
+    .main-productos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .caja-modulos {
+        grid-column: 1/2 ;
+        grid-row: 1/2 ;
+    }
+
+    .caja-conductores {
+        grid-column: 2/3 ;
+        grid-row: 1/2 ;
+    }
+
+    .caja-iluminacion {
+        grid-column: 1/2 ;
+        grid-row: 2/3 ;
+    }
+
+    .caja-proteccion {
+        grid-column: 2/3 ;
+        grid-row: 2/3 ;
+    }
+}
+

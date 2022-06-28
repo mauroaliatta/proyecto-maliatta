@@ -60,6 +60,14 @@ html {
     display: inline-block;
     border: solid 1px black;
     text-decoration: none;
+    -webkit-box-shadow: 5px 18px 41px -14px rgba(0,0,0,0.83);
+    -moz-box-shadow: 5px 18px 41px -14px rgba(0,0,0,0.83);
+    box-shadow: 5px 18px 41px -14px rgba(0,0,0,0.83);
+    transition-duration: 500ms;
+}
+
+.contenedorSection:hover {
+    transform:scale(1.2)
 }
 
 .sub {

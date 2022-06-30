@@ -1,3 +1,13 @@
+.header {
+    background: rgb(2,1,4);
+    background: linear-gradient(180deg, rgba(2,1,4,1) 63%, rgba(255,255,255,0.9808298319327731) 100%);
+}
+
+/*footer {
+    background: rgb(2,1,4);
+    background: linear-gradient(0deg, rgba(2,1,4,1) 63%, rgba(255,255,255,0.9808298319327731) 100%);
+}
+/*
 * {
     margin: 0%;
     padding: 0%;
@@ -12,18 +22,9 @@ html {
 
 
 /********************************CSS DEL HEADER************************************/
-.header {
-    position: sticky;
-    top: 0px;
+/*.header {
     background: rgb(2,1,4);
     background: linear-gradient(180deg, rgba(2,1,4,1) 63%, rgba(255,255,255,0.9808298319327731) 100%);
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 60% 40%;
-    grid-template-areas: 
-        "titulo logo"
-        "nav nav"
-    ;
 }
 
 .tituloPrincipal {
@@ -56,7 +57,7 @@ html {
 
 /***********************************CSS DEL MAIN***********************************/
 
-.contenedorSection {
+/*.contenedorSection {
     display: inline-block;
     border: solid 1px black;
     text-decoration: none;
@@ -111,12 +112,9 @@ html {
 
 /************************************CSS DEL FOOTER*******************************/
 
-footer {
+/*footer {
     background: rgb(2,1,4);
     background: linear-gradient(0deg, rgba(2,1,4,1) 63%, rgba(255,255,255,0.9808298319327731) 100%);
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(6, 20%);
 }
 
 .datos-empresa {
@@ -173,7 +171,7 @@ footer {
 
 /******************************* MEDIA 480 a 768*************************/
 
-@media (min-width: 480px) {
+/*@media (min-width: 480px) {
     .datos-empresa {
         grid-column: 1/2;
         grid-row: 3/5;
@@ -234,5 +232,4 @@ footer {
         grid-column: 2/3 ;
         grid-row: 2/3 ;
     }
-}
-
+}/*

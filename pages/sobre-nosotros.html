@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
     
-<body> 
+<body class="container-fluid"> 
+    
     <header class="row header">
         
         <nav class="navbar bg-light col-4">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo-2.jpg" alt="Logo de la empresa" width="90" height="72" class="d-inline-block align-text">Andolini</a>
+                <a class="navbar-brand" href="../index.html"><img class="rounded-pill" src="../img/logo-2.jpg" alt="Logo de la empresa" width="90" height="72" class="d-inline-block align-text">Andolini</a>
             </div>
         </nav>
         
@@ -47,26 +48,26 @@
     <main>
 
         <!--Aca va el video empresarial, ingrese un video random a modo de ejemplo-->
-        <section class="videoEmpresarial">
-            <iframe class="videoEmpresarial" width="560" height="315" src="https://www.youtube.com/embed/i96VS_z8y7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section class="row">
+            <iframe class="rounded-5 col-12" width="560" height="315" src="https://www.youtube.com/embed/i96VS_z8y7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
-        <article>
-            <h2 class="sub">Nuestra Historia</h2>
-            <img class="videoEmpresarial" src="../img/historia.jpg" alt="Imagen ilustrativa de libro antiguo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae architecto maiores accusamus officiis consectetur nesciunt, saepe voluptatum minus iste perferendis consequatur provident? Natus deleniti commodi laborum et ratione sit voluptas.</p>
+        <article class="row">
+            <h2 class="sub text-center col-12">Nuestra Historia</h2>
+            <img class="rounded-pill col-3" src="../img/historia.jpg" alt="Imagen ilustrativa de libro antiguo">
+            <p class="col-9 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae architecto maiores accusamus officiis consectetur nesciunt, saepe voluptatum minus iste perferendis consequatur provident? Natus deleniti commodi laborum et ratione sit voluptas.</p>
         </article>
             
-        <article>
-            <h2 class="sub">Nuestra Visión</h2> 
-            <img class="videoEmpresarial" src="../img/nuestra-mision.jpg" alt="Imagen ilustrativa de proyectos a futuro">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro voluptates reiciendis nostrum commodi? Iure dolore assumenda minus voluptate ducimus hic quidem, alias blanditiis nisi. Pariatur optio laudantium totam quis.</p>  
+        <article class="row">
+            <h2 class="sub text-center col-12">Nuestra Visión</h2> 
+            <img class="col-3 rounded-pill" src="../img/nuestra-mision.jpg" alt="Imagen ilustrativa de proyectos a futuro">
+            <p class="col-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro voluptates reiciendis nostrum commodi? Iure dolore assumenda minus voluptate ducimus hic quidem, alias blanditiis nisi. Pariatur optio laudantium totam quis.</p>  
         </article>
             
-        <article>
-            <h2 class="sub">Certificado ISO9001</h2>
-            <img class="videoEmpresarial" src="../img/iso9001.jpg" alt="Imagen de logo iso9001">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus cum, itaque voluptate cupiditate numquam odio recusandae iure quo exercitationem minus, deserunt, corporis omnis sequi. Quidem nesciunt nihil quos laboriosam ipsum.</p>
+        <article class="row">
+            <h2 class="sub text-center">Certificado ISO9001</h2>
+            <img class="col-3 rounded-pill" src="../img/iso9001.jpg" alt="Imagen de logo iso9001">
+            <p class="col-9">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus cum, itaque voluptate cupiditate numquam odio recusandae iure quo exercitationem minus, deserunt, corporis omnis sequi. Quidem nesciunt nihil quos laboriosam ipsum.</p>
         </article>
 
     </main>
@@ -78,29 +79,32 @@
         <div class="row">
             <div class="col-3">
                 <!-- Este es el Logo de la empresa -->
-                <a href="../index.html"><img src="../img/logo-2.jpg" alt="Logo de la empresa"></a>
-                <p>Electricidad Andolini S.A Longfellow 110 Tel.: 1234-5678 info@coppola.com</p>
+                <a href="../index.html"><img class="rounded-pill" src="../img/logo-2.jpg" alt="Logo de la empresa"></a>
+                <p class="text-start">Electricidad Andolini S.A</p>
+                <p class="text-start">Longfellow 110</p>
+                <p class="text-start">Tel.: 1234-5678</p>
+                <p class="text-start">info@coppola.com</p>
             </div>
     
             <div class="col-3">
                 <h3>Información General</h3>
                 <ul class="list-group">
-                    <li class="list-group-item"><a href="../index.html">Home</a></li>
-                    <li class="list-group-item"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                    <li class="list-group-item"><a href="./productos.html">Productos</a></li>
-                    <li class="list-group-item"><a href="./fichas-tecnicas.html">Fichas Tecnicas</a></li>
-                    <li class="list-group-item"><a href="./distribuidores.html">Distribuidores</a></li>
-                    <li class="list-group-item"><a href="./contacto.html">Contacto</a></li>
+                    <li class="list-group-item"><a class="text-decoration-none" href="../index.html">Home</a></li>
+                    <li class="list-group-item"><a class="text-decoration-none" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="list-group-item"><a class="text-decoration-none" href="./productos.html">Productos</a></li>
+                    <li class="list-group-item"><a class="text-decoration-none" href="./fichas-tecnicas.html">Fichas Tecnicas</a></li>
+                    <li class="list-group-item"><a class="text-decoration-none" href="./distribuidores.html">Distribuidores</a></li>
+                    <li class="list-group-item"><a class="text-decoration-none" href="./contacto.html">Contacto</a></li>
                 </ul>
             </div>
     
             <div class="col-2">
                 <h3>Productos</h3>
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="./productos.html">Modulos</a></li>
-                        <li class="list-group-item"><a href="./productos.html">Conductores Electricos</a></li>
-                        <li class="list-group-item"><a href="./productos.html">Iluminación Led</a></li>
-                        <li class="list-group-item"><a href="./productos.html">Protección</a></li>
+                        <li class="list-group-item"><a class="text-decoration-none" href="./productos.html">Modulos</a></li>
+                        <li class="list-group-item"><a class="text-decoration-none" href="./productos.html">Conductores Electricos</a></li>
+                        <li class="list-group-item"><a class="text-decoration-none" href="./productos.html">Iluminación Led</a></li>
+                        <li class="list-group-item"><a class="text-decoration-none" href="./productos.html">Protección</a></li>
                     </ul>
             </div>
     
@@ -115,12 +119,12 @@
                     </div>
                     
                 </form>
-                <div class="col-2">
-                    <ul>
-                        <li><a class="lista" href="https://twitter.com/" target="_blank"><i class="bi-twitter"></i></a></li>
-                        <li><a class="lista" href="https://www.instagram.com/" target="_blank"><i class="bi-instagram"></i></a></li>
-                        <li><a class="lista" href="https://www.facebook.com/index.php?lh=d5b791a9ae2d4e969445272a86e366cd" target="_blank"><i class="bi-facebook"></i></a></li>
-                        <li><a class="lista" href="https://www.youtube.com/" target="_blank"><i class="bi-youtube"></i></a></li>
+                <div>
+                    <ul class="list-group list-group-horizontal-xl">
+                        <li class="list-group-item"><a class="lista" href="https://twitter.com/" target="_blank"><i class="bi-twitter"></i></a></li>
+                        <li class="list-group-item"><a class="lista" href="https://www.instagram.com/" target="_blank"><i class="bi-instagram"></i></a></li>
+                        <li class="list-group-item"><a class="lista" href="https://www.facebook.com/index.php?lh=d5b791a9ae2d4e969445272a86e366cd" target="_blank"><i class="bi-facebook"></i></a></li>
+                        <li class="list-group-item"><a class="lista" href="https://www.youtube.com/" target="_blank"><i class="bi-youtube"></i></a></li>
                     </ul>
                 </div>
             </div>

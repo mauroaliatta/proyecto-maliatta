@@ -19,7 +19,7 @@
         
         <nav class="navbar bg-light col-4">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo-2.jpg" alt="Logo de la empresa" width="90" height="72" class="d-inline-block align-text">Andolini</a>
+                <a class="navbar-brand" href="../index.html"><img class="rounded-pill" src="../img/logo-2.jpg" alt="Logo de la empresa" width="90" height="72" class="d-inline-block align-text">Andolini</a>
             </div>
         </nav>
         
@@ -44,47 +44,83 @@
 
     <hr>
 
-    <main class="main-productos">
-        
-        <!--Aca va un acordeon, todavia no se realizarlo pero voy a googlear-->
-        <div class="caja-modulos">
-            <h2 class="sub">Modulos</h2>
-            <img class="img-productos" src="../img/modulos.jpg" alt="Imagen de modulos punto y toma">
-                <ul>
-                    <li>Linea Eco</li>
-                    <li>Linea Corleone</li>
-                </ul>
-        </div>
-        
-        <div class="caja-conductores">
-            <h2 class="sub">Conductores Electricos</h2>
-            <img class="img-productos" src="../img/conductores-electricos.jpg" alt="Imagen de cables multimarca">
-                <ul>
-                    <li>Cables 1.5mm</li>
-                    <li>Cables 2.5mm</li>
-                    <li>Cables 4mm</li>
-                    <li>Cables 6mm</li>
-                </ul>
-        </div>
-        
-        <div class="caja-iluminacion">
-            <h2 class="sub">Iluminación Led</h2>
-            <img class="img-productos" src="../img/iluminacion-led.jpg" alt="Imagen lamparas led multimarca">
-                <ul>
-                    <li>Lamparas Led</li>
-                    <li>High Power</li>
-                    <li>Alumbrado Publico</li>
-                </ul>
-        </div>
+    <main>
+        <!--Comienza la especie de acordeon XD-->
+        <div class="row">
+            <nav id="navbar-example3" class="col-3 navbar bg-light flex-column align-items-stretch p-3">
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#item-1">Modulos</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-1-1">Linea Eco</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-2">Linea Corleone</a>
+                        </nav>
+                    <a class="nav-link" href="#item-2">Conductores Electricos</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-2-1">Cables 1.5mm a 6mm</a>
+                            <a class="nav-link ms-3 my-1" href="#item-2-2">Cables Tipo Taller</a>
+                            <a class="nav-link ms-3 my-1" href="#item-2-3">Cables Subterraneos</a>
+                        </nav>
+                    <a class="nav-link" href="#item-3">Iluminación Led</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Lamparas Led</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">High Power</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-3">Alumbrado Publico</a>
+                        </nav>
+                    <a class="nav-link" href="#item-4">Protección</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-4-1">Termomagneticas</a>
+                            <a class="nav-link ms-3 my-1" href="#item-4-2">Disyuntores</a>
+                        </nav>
+                </nav>
+            </nav>
 
-        <div class="caja-proteccion">
+            <div class="col-9" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" tabindex="0">
+                
+                <div id="item-1">
+                    <h4>Item 1</h4>
+                </div>
+
+                <div id="item-1-1">
+                    <h5>Item 1-1</h5>
+                    <p>...</p>
+                </div>
+
+                <div id="item-1-2">
+                    <h5>Item 1-2</h5>
+                    <p>...</p>
+                </div>
+
+                <div id="item-2">
+                    <h4>Item 2</h4>
+                    <p>...</p>
+                </div>
+
+                <div id="item-3">
+                    <h4>Item 3</h4>
+                    <p>...</p>
+                </div>
+
+                <div id="item-3-1">
+                    <h5>Item 3-1</h5>
+                    <p>...</p>
+                </div>
+
+                <div id="item-3-2">
+                    <h5>Item 3-2</h5>
+                    <p>...</p>
+                </div>
+
+            </div>
+
+        </div>
+        <!--<div class="caja-proteccion">
             <h2 class="sub">Protección</h2>
             <img class="img-productos" src="../img/termicas.jpg" alt="Imagen termicas y disyuntores">
                 <ul>
                     <li>Termomagneticas</li>
                     <li>Disyuntores</li>
                 </ul>
-        </div>
+        </div>-->
 
     </main>
 
@@ -95,8 +131,11 @@
         <div class="row">
             <div class="col-3">
                 <!-- Este es el Logo de la empresa -->
-                <a href="../index.html"><img src="../img/logo-2.jpg" alt="Logo de la empresa"></a>
-                <p>Electricidad Andolini S.A Longfellow 110 Tel.: 1234-5678 info@coppola.com</p>
+                <a href="../index.html"><img class="rounded-pill" src="../img/logo-2.jpg" alt="Logo de la empresa"></a>
+                <p class="text-start">Electricidad Andolini S.A</p>
+                <p class="text-start">Longfellow 110</p>
+                <p class="text-start">Tel.: 1234-5678</p>
+                <p class="text-start">info@coppola.com</p>
             </div>
     
             <div class="col-3">
@@ -132,14 +171,14 @@
                     </div>
                     
                 </form>
-                <div class="col-2">
-                    <ul>
-                        <li><a class="lista" href="https://twitter.com/" target="_blank"><i class="bi-twitter"></i></a></li>
-                        <li><a class="lista" href="https://www.instagram.com/" target="_blank"><i class="bi-instagram"></i></a></li>
-                        <li><a class="lista" href="https://www.facebook.com/index.php?lh=d5b791a9ae2d4e969445272a86e366cd" target="_blank"><i class="bi-facebook"></i></a></li>
-                        <li><a class="lista" href="https://www.youtube.com/" target="_blank"><i class="bi-youtube"></i></a></li>
+                <div>
+                    <ul class="list-group list-group-horizontal-xl">
+                        <li class="list-group-item"><a class="lista" href="https://twitter.com/" target="_blank"><i class="bi-twitter"></i></a></li>
+                        <li class="list-group-item"><a class="lista" href="https://www.instagram.com/" target="_blank"><i class="bi-instagram"></i></a></li>
+                        <li class="list-group-item"><a class="lista" href="https://www.facebook.com/index.php?lh=d5b791a9ae2d4e969445272a86e366cd" target="_blank"><i class="bi-facebook"></i></a></li>
+                        <li class="list-group-item"><a class="lista" href="https://www.youtube.com/" target="_blank"><i class="bi-youtube"></i></a></li>
                     </ul>
-                </div>
+                </div>>
             </div>
         </div>
     

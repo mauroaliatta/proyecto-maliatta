@@ -14,17 +14,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
     
-<body> 
+<body class="container-fluid"> 
     <header class="row header">
         
         <nav class="navbar bg-light col-4">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="./img/logo-2.jpg" alt="Logo de la empresa" width="90" height="72" class="d-inline-block align-text">Andolini</a>
+                <a class="navbar-brand" href="index.html"><img class="rounded-pill" src="./img/logo-2.jpg" alt="Logo de la empresa" width="90" height="72" class="d-inline-block align-text">Andolini</a>
             </div>
         </nav>
         
         <nav class="navbar navbar-expand-lg bg-light col-8">
-            <div class="container-fluid">
+            <div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -45,31 +45,31 @@
 
     <main>
 
-        <section class="row">
+        <section class="row justify-content-md-center m-5">
 
-            <div class="card col-6" style="width: 18rem;">
-                <img src="./img/modulos.jpg" class="card-img-top" alt="Modulo Tomacorriente">
-                    <div class="card-body"><a href="./pages/productos.html" class="btn btn-primary">Modulos</a>
+            <div class="card col-6 m-5" style="width: 18rem;">
+                <img src="img/modulos.jpg" class="card-img-top" alt="Modulo Tomacorriente">
+                    <div class="card-body"><a href="pages/productos.html" class="btn btn-primary">Modulos</a>
                     </div>
             </div>
     
-            <div class="card col-6" style="width: 18rem;">
+            <div class="card col-6 m-5" style="width: 18rem;">
                 <img src="./img/conductores-electricos.jpg" class="card-img-top" alt="Cables unipolares de diferentes tamaños">
                     <div class="card-body"><a href="./pages/productos.html" class="btn btn-primary">Conductores Electricos</a>
                     </div>
             </div>
-    
+
         </section>
 
-        <section class="row">
+        <section class="row justify-content-md-center m-5">
 
-            <div class="card col-6" style="width: 18rem;">
+            <div class="card col-6 m-5" style="width: 18rem;">
                 <img src="./img/iluminacion-led.jpg" class="card-img-top" alt="Lamparas led de diferentes tipos">
                     <div class="card-body"><a href="./pages/productos.html" class="btn btn-primary">Iluminación Led</a>
                     </div>
             </div>
     
-            <div class="card col-6" style="width: 18rem;">
+            <div class="card col-6 m-5" style="width: 18rem;">
                 <img src="./img/termicas.jpg" class="card-img-top" alt="Termicas bipolares de diferentes amperes">
                     <div class="card-body"><a href="./pages/productos.html" class="btn btn-primary">Protección</a>
                     </div>
@@ -78,7 +78,7 @@
         </section>
         
         <aside>
-            <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/h5pa71Vhaqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>></iframe>
+            <iframe class="rounded-5 col-12" width="560" height="315" src="https://www.youtube.com/embed/h5pa71Vhaqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>></iframe>
         </aside>
     </main>
 
@@ -87,29 +87,32 @@
     <div class="row">
         <div class="col-3">
             <!-- Este es el Logo de la empresa -->
-            <a href="index.html"><img src="./img/logo-2.jpg" alt="Logo de la empresa"></a>
-            <p>Electricidad Andolini S.A Longfellow 110 Tel.: 1234-5678 info@coppola.com</p>
+            <a href="index.html"><img class="rounded-pill" src="./img/logo-2.jpg" alt="Logo de la empresa"></a>
+            <p class="text-start">Electricidad Andolini S.A</p>
+            <p class="text-start">Longfellow 110</p>
+            <p class="text-start">Tel.: 1234-5678</p>
+            <p class="text-start">info@coppola.com</p>
         </div>
 
         <div class="col-3">
             <h3>Información General</h3>
             <ul class="list-group">
-                <li class="list-group-item"><a href="index.html">Home</a></li>
-                <li class="list-group-item"><a href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li class="list-group-item"><a href="./pages/productos.html">Productos</a></li>
-                <li class="list-group-item"><a href="./pages/fichas-tecnicas.html">Fichas Tecnicas</a></li>
-                <li class="list-group-item"><a href="./pages/distribuidores.html">Distribuidores</a></li>
-                <li class="list-group-item"><a href="./pages/contacto.html">Contacto</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="index.html">Home</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="./pages/productos.html">Productos</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="./pages/fichas-tecnicas.html">Fichas Tecnicas</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="./pages/distribuidores.html">Distribuidores</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </div>
 
         <div class="col-2">
             <h3>Productos</h3>
                 <ul class="list-group">
-                    <li class="list-group-item"><a href="./pages/productos.html">Modulos</a></li>
-                    <li class="list-group-item"><a href="./pages/productos.html">Conductores Electricos</a></li>
-                    <li class="list-group-item"><a href="./pages/productos.html">Iluminación Led</a></li>
-                    <li class="list-group-item"><a href="./pages/productos.html">Protección</a></li>
+                    <li class="list-group-item"><a class="text-decoration-none" href="./pages/productos.html">Modulos</a></li>
+                    <li class="list-group-item"><a class="text-decoration-none" href="./pages/productos.html">Conductores Electricos</a></li>
+                    <li class="list-group-item"><a class="text-decoration-none" href="./pages/productos.html">Iluminación Led</a></li>
+                    <li class="list-group-item"><a class="text-decoration-none" href="./pages/productos.html">Protección</a></li>
                 </ul>
         </div>
 
@@ -124,12 +127,12 @@
                 </div>
                 
             </form>
-            <div class="col-2">
-                <ul>
-                    <li><a class="lista" href="https://twitter.com/" target="_blank"><i class="bi-twitter"></i></a></li>
-                    <li><a class="lista" href="https://www.instagram.com/" target="_blank"><i class="bi-instagram"></i></a></li>
-                    <li><a class="lista" href="https://www.facebook.com/index.php?lh=d5b791a9ae2d4e969445272a86e366cd" target="_blank"><i class="bi-facebook"></i></a></li>
-                    <li><a class="lista" href="https://www.youtube.com/" target="_blank"><i class="bi-youtube"></i></a></li>
+            <div>
+                <ul class="list-group list-group-horizontal-xl">
+                    <li class="list-group-item"><a class="lista" href="https://twitter.com/" target="_blank"><i class="bi-twitter"></i></a></li>
+                    <li class="list-group-item"><a class="lista" href="https://www.instagram.com/" target="_blank"><i class="bi-instagram"></i></a></li>
+                    <li class="list-group-item"><a class="lista" href="https://www.facebook.com/index.php?lh=d5b791a9ae2d4e969445272a86e366cd" target="_blank"><i class="bi-facebook"></i></a></li>
+                    <li class="list-group-item"><a class="lista" href="https://www.youtube.com/" target="_blank"><i class="bi-youtube"></i></a></li>
                 </ul>
             </div>
         </div>

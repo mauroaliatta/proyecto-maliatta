@@ -1,0 +1,9 @@
+.cardIndex {
+    -webkit-box-shadow: 5px 18px 41px -14px rgba(0,0,0,0.83);
+    -moz-box-shadow: 5px 18px 41px -14px rgba(0,0,0,0.83);
+    box-shadow: 5px 18px 41px -14px rgba(0,0,0,0.83);
+    transition-duration: 1s;
+        &:hover {
+            transform:scale(1.2);
+        }
+}
